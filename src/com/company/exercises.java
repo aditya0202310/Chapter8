@@ -5,7 +5,7 @@ public class exercises {
     public static void exercises() {
     }
 // first method
-    public static String addOdds(int n) {
+    public static String  addOdds(int n) {
         int i = 1;
         int sum = 0;
         while (i <= n) {
@@ -15,26 +15,23 @@ public class exercises {
         return "Sum of odd numbers from 1 to n is " + sum;
     }
     // Second method
-    public static String howManyYears(double endPop) {
+    public static int howManyYears(double startPop, double endPop) {
         int year = 0;
-        double startPop = 111.2;
         while(startPop <= endPop){
             startPop = startPop * 1.0113;
            year++;
         }
-        return "It will take " + year + " years for the start population to equal end population";
+        return year;
     }
     // Third method
     public static void printSum(int n){
         int i = 1;
         int sum = 0;
         while (i <= n){
-            System.out.print(i + " ");
             sum += i;
             i = i + 1;
         }
-        System.out.println("= " + sum);
-
+        System.out.println(sum);
     }
     //Fourth Method
     public static boolean PerfectSquare(int n){
@@ -44,12 +41,10 @@ public class exercises {
            sum += i;
            i = i + 2;
             if(sum == n ) {
-                System.out.println("Fantastic it's a perfect square!");
                 return true;
             }
 
         }
-        System.out.println("It's not a perfect square. Try again.");
         return false;
      //Fifth Method
     }
@@ -68,8 +63,8 @@ public class exercises {
         System.out.println(addOdds(10));
         System.out.println(addOdds(20));
         System.out.println(addOdds(150));
-        System.out.println(howManyYears(120));
-        System.out.println(howManyYears(150));
+        System.out.println(howManyYears(111.2, 120));
+        System.out.println(howManyYears(111.2, 150));
         printSum(6);
         printSum(8);
         System.out.println(PerfectSquare(4));
