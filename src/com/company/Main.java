@@ -2,34 +2,47 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args) {
-//        calcFactorial();
-        calcEX();
-
-
+    public Main() {
     }
 
-
-    public static void calcFactorial() {
-        for (long i = 1, factorial = 1; i <= 20; i++) {
-            factorial *= i;
-            System.out.println(factorial);
-            /// The number exceeds the number limit for an int type and instead of getting bigger it displays a negative value.
-        }
-    }
-
-    public static double calcEX() {
-        double e = 1.00;
-        for (double factorial = 1.00, oldE = 0, i = 1.00, x = 1.00;e - oldE > 0.001 ; x = x + 1) {
-            if (x<=5) {
-                factorial *= i;
-                oldE = e;
-                e += Math.pow(x, i) / factorial;
-                i = i + 1;
+    //    public static void  floydsTriangle(int k) {
+//        for (int i = 0; i <= k; i++) {
+//            for (int m = 1; m <=i; m++) {
+//                System.out.print(i + 1);
+//            }
+//            System.out.println();
+//        }
+//    }
+    public static void floydsTriangle(int k) {
+        int number = 1;
+        for (int i = 1; i <= k; i++) {
+            for (int m = 1; m <= i; m++) {
+                System.out.print(number + " ");
+                number++;
             }
+            System.out.println();
         }
-        System.out.printf("e is %2.3f \n", e);
-        return e;
+    }
+
+
+    public static void main(String[] args) {
+        floydsTriangle(5);
+
+//        for(int i = 0; i < 5; i++){
+//            for(int j = 0; j < 10; j++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//////        }
+//        for (int i = 1; i <= 5; i++) {
+//            for (int h = 4; h >= i; h--) {
+//                System.out.print(".");
+//            }
+//            for (int k = 1; k <= i; k++) {
+//                System.out.print(i);
+//            }
+//            System.out.println();
+
+
     }
 }
-

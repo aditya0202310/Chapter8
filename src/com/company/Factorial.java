@@ -13,7 +13,6 @@ public class Factorial {
         }
         return factorial;
     }
-
     public static void calcE() {
         double e = 1.00;
         double factorial = 1.00;
@@ -61,10 +60,9 @@ public class Factorial {
         }
         System.out.printf("e is %2.3f \n", e);
     }
-    void calcFactorial();
 //        System.out.println(calcFactorial(8));
 //        System.out.println(calcFactorial(10));
-//          calcE();
+//        calcE();
 //        calcEX(1);
 //        calcEX(2);
 //        calcEX(3);
